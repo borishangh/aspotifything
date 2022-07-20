@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>a spotify thing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="page_onload()">
+<div class="main">
+    <div class="header">
+        A Spotify Thing
+    </div>
+
+    <div class="auth">
+        Step 1 :
+        <input type="button" value="request auth" onclick="request_auth()">
+    </div>
+
+    <p>Step 2 : Select</p>
+
+    <div class="select">
+      
+        <div class="choice">
+            <a name="artists" id="choice">artists</a>
+            <a name="tracks" id="choice">tracks</a>
+        </div>
+
+        <div class="time">
+            <a name="short_term" id="time">last 4 weeks</a>
+            <a name="medium_term" id="time">last 6 months</a>
+            <a name="long_term" id="time">all time</a>
+        </div>
+
+
+    </div>
+
+    <div class="list"></div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
